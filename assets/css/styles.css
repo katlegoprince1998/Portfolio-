@@ -1,0 +1,124 @@
+/* Beginning of Navigation bar styling */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #000000;
+}
+nav{
+    width: 100vw;
+    height: 80px;
+    box-shadow: 0px 0px 16px 0px rgba(216, 63, 2, 0.3);
+    position: fixed;
+    background-color: #000;
+}
+nav .logo{
+    font-size: 38px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    letter-spacing: 0.2;
+    color: orangered;
+    padding-top: 20px;
+}
+
+nav ul{
+    display: flex;
+    font-size: 16px;
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2;
+    position: inherit;
+    left: 35%;
+    top: 4%;
+}
+nav ul li a{
+    text-decoration: none;
+    margin: 5px;
+    cursor: pointer;
+    color: wheat;
+    transition: all 0.3s ease-in;
+}
+nav ul li a:hover{
+    color: orangered;
+}
+/* End of Navigation bar styling */
+/*///////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////*/
+/*Begining of home screen styling */
+.home_container{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 200px;
+    
+}
+.behind_pic{
+    background-color: orangered;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5% 100% 5% 100%;
+    box-shadow: 25px 5px 25px 5px rgba(177, 58, 3, 0.4);
+}
+.home_details{
+    width: 400px;
+    border-right: 10px solid orangered;
+    border-radius: 100%;
+    box-shadow: 0 25px 0 0 rgba(177, 58, 3, 0.4);
+}
+.home_details h1{
+    color: wheat;
+    font-size: 55px;
+    font-weight: 800;
+    letter-spacing: 0.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 15px 0 rgba(177, 58, 3, 0.8);
+    
+}
+.dev{
+    color: orangered;
+}
+.ops{
+    border-bottom: 5px solid orangered;
+    border-radius: 100% 100%;
+    
+}
+h5{
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    margin: 10px;
+}
+button{
+    background-color: orangered;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 18px;
+    box-shadow: 0px 55px 20px 0px rgba(177, 58, 3, 0.4);
+    color: wheat;
+    font-weight: 800;
+    transition: all 0.8s ease-in-out;
+}
+button:hover{
+    background-color: wheat;
+    color: orangered;
+    transform: skewX(5deg);
+}
+/*End of home screen styling */
