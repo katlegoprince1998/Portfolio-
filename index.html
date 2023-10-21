@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets//css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Simple Portfolio</title>
 </head>
 <body>
@@ -11,16 +12,16 @@
     <nav>
         <a class="logo" href="#">Mash.</a>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About me</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <!--End of Navbar-->
     <!--Home page-->
-    <section>
+    <section id="home">
         <div class="home_container">
             <div class="home_details">
                 <h1>I am a <span class="dev">Dev</span><span class="ops">Ops</span> Engineer</h1>
@@ -32,5 +33,102 @@
         </div>
     </section>
     <!--End Home page-->
+    <section id="about">
+        <div class="top-style"><p>.</p></div>
+        <h1>Abo<span class="about-orange">ut me</span></h1>
+        <div class="paragraph">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                   consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                   esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                   cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                    id est laborum.</p>
+                    <div class="devops">
+                        <span class="deo">D</span>
+                        <span class="deo">E</span>
+                        <span class="vps">V</span>
+                        <span class="deo">O</span>
+                        <span class="vps">P</span>
+                        <span class="vps">S</span>
+                    </div>
+        </div>
+    </section>
+    <!--End of About section-->
+    <!--Begining of Skill section-->
+    <section id="skill">
+        <h1>Ski<span class="first">ll</span>s</h1>
+        <div class="skill-data">
+            <h4 class="one">Techn<span class="first">ical Sk</span>ills</h4>
+            <div class="the-skills-right">
+                <ul>
+                    <li>Java <span class="first">+</span> Springboot</li>
+                    <li>Python <span class="first">+</span> Django</li>
+                    <li>javaScript <span class="first">+</span> React Js</li>
+                    <li>Frontend Development</li>
+                    <li>MySql <span class="first">+</span> NoSql <span class="first">+</span> REST APIs</li>
+                    <li>DevOps Tools</li>
+                </ul>
+            </div>
+            <div class="the-skills-left">
+                <ul>
+                    <li>Presentation Skills</li>
+                    <li>Adaptability</li>
+                    <li>Communication Skills</li>
+                    <li>Problem Solving Skills</li>
+                    <li>Analytical Skills</li>
+                </ul>
+            </div>
+            <h4 class="two">Professi<span class="first">onal Sk</span>ills</h4>
+            
+        </div>
+    </section>
+    <!--End of skill section-->
+    <!--Begginning of Project section-->
+    <section id="project">
+      <h1><span class="letter">P</span>ro<span class="letter">j</span>ec<span class="letter">t</span></h1>
+      <div class="project-container">
+        <div class="project-content">
+            <h4>PickUp</h4>
+            <div class="pic">
+                <img src="./assets//images//home.jpg" alt="">
+            </div>
+            <div class="p-skill">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+            </div>
+            <a href="">View Code</a>
+        </div>
+        <div class="project-content">
+            <h4>PickUp</h4>
+            <div class="pic">
+                <img src="./assets//images//home.jpg" alt="">
+            </div>
+            <div class="p-skill">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+            </div>
+            <a href="">View Code</a>
+        </div>
+        <div class="project-content">
+            <h4>PickUp</h4>
+            <div class="pic">
+                <img src="./assets//images//home.jpg" alt="">
+            </div>
+            <div class="p-skill">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+            </div>
+            <a href="">View Code</a>
+        </div>
+      </div>
+    </section>
+    <!--End of project section-->
+
+    <!--Links-->
+    <script src="./assets/JS/App.js"></script>
 </body>
 </html>

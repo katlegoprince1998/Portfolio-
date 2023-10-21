@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior:smooth;
+}
 
 body{
     height: 100vh;
@@ -11,8 +14,8 @@ body{
 }
 nav{
     width: 100vw;
-    height: 80px;
-    box-shadow: 0px 0px 16px 0px rgba(216, 63, 2, 0.3);
+    height: 10vh;
+    box-shadow: 0px 0px 56px 0px rgba(216, 63, 2, 0.3);
     position: fixed;
     background-color: #000;
 }
@@ -27,7 +30,7 @@ nav .logo{
     margin-left: 40px;
     letter-spacing: 0.2;
     color: orangered;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 nav ul{
@@ -61,6 +64,7 @@ nav ul li a:hover{
     justify-content: space-evenly;
     align-items: center;
     padding-top: 200px;
+    height: 100vh;
     
 }
 .behind_pic{
@@ -122,3 +126,203 @@ button:hover{
     transform: skewX(5deg);
 }
 /*End of home screen styling */
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////*/
+#about{
+    height: 100vh;
+    
+}
+#about h1{
+    color: wheat;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+}
+h1 .about-orange{
+    color: orangered;
+    border-bottom: 5px solid wheat;
+    border-radius: 100% 50% 100% 50%;
+    
+}
+.top-style p{
+    display: none;
+}
+#about .top-style{
+    background-color: orangered;
+    height: 5px;
+    width: 50vw;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+.paragraph{
+    display: grid;
+    grid-template-columns: 50% 25%;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 80px;
+    
+}
+.paragraph p{
+    color: wheat;
+    font-size: 21px;
+    
+   
+}
+.devops{
+    border: 8px groove orangered;
+    color: wheat;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 100px 16px 1px rgba(211, 75, 7, 0.3);
+    
+}
+.devops span{
+    font-size: 88px;
+    font-weight: 900;
+}
+.vps{
+    color: orangered;
+}
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+#skill{
+    height: 100vh;
+    width: 100vw;
+}
+#skill h1{
+    font-size: 48px;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.first, #skill h1 span{
+    color: orangered;
+}
+#skill h1 span{
+    border-bottom: 10px solid wheat;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+.skill-data{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 5px;
+    justify-content: center;
+    
+}
+.the-skills-right{
+    border-left: 10px solid orangered;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%;
+    height: 250px;
+}
+.the-skills-left{
+    border-right: 10px solid orangered;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
+    height: 250px;
+}
+.the-skills-right ul li, .the-skills-left ul li{
+    color: wheat;
+    list-style: none;
+   
+}
+.the-skills-right ul{
+   margin: 50px 0 0 50px;
+   padding: 10px;
+}
+.the-skills-left ul{
+    margin-left: 190px;
+    margin-top: 50px;
+    padding: 10px;
+ }
+.skill-data h4{
+    font-size: 22px;
+    margin-top: 100px;
+    color: wheat;
+}
+.two{
+    margin-left: 80px;
+}
+.skill-data .one{
+    margin-left: 200px;
+}
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+#project{
+    height: 90vh;
+    width: 100vw;
+}
+#project h1{
+    font-size: 48px;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+}
+.letter{
+    color: orangered;
+    border-bottom: 5px solid wheat;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+
+}
+.pic img{
+    width: 150px;
+    display: flex;
+    margin: auto;
+    border-radius: 18px;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 100px;
+}
+.project-content{
+    border: 5px groove orangered;
+    border-radius: 12px;
+    padding: 10px;
+}
+.project-content h4{
+    font-size: 22px;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.p-skill{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+}
+.p-skill span{
+    color: white;
+    font-size: 12px;
+}
+.project-content a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: orangered;
+    font-weight: 900;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.project-content a:hover{
+    color: wheat;
+}
