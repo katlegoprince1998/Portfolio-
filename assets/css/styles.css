@@ -18,6 +18,7 @@ nav{
     box-shadow: 0px 0px 56px 0px rgba(216, 63, 2, 0.3);
     position: fixed;
     background-color: #000;
+    z-index: 999;
 }
 nav .logo{
     font-size: 38px;
@@ -32,6 +33,61 @@ nav .logo{
     color: orangered;
     padding-top: 15px;
 }
+.toggle-humberg{
+   z-index: 999;
+   position: inherit;
+   top: 25px;
+   display: grid;
+   right: 0;
+   margin-right: 20px;
+   cursor: pointer;
+   gap: 5px;
+  
+}
+.toggle-humberg div{
+    width: 10px;
+    height: 2px;
+    background-color: orangered;
+    border-radius: 5px;
+    
+}
+.toggle-humberg div p{
+    display: none;
+}
+.toggle-humberg div:nth-child(1){
+    width: 22px;
+    height: 3px;
+}
+.toggle-humberg div:nth-child(2){
+    width: 16px;
+    height: 3px;
+}
+.menu{
+    box-shadow: 0px 0px 56px 0px rgba(216, 63, 2, 0.3);
+    position: absolute;
+    right: 0;
+    width: 150px;
+    height: 70vh;
+    display: grid;
+    gap: 2px;
+    z-index: 999;
+    top: 70px;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 40%;
+    border-top-left-radius: 40%;
+}
+.menu li a{
+    text-decoration: none;
+    margin: 5px;
+    cursor: pointer;
+    color: wheat;
+    transition: all 0.3s ease-in;
+    
+}
+.menu li{
+    list-style: none;
+}
 
 nav ul{
     display: flex;
@@ -42,6 +98,7 @@ nav ul{
     position: inherit;
     left: 35%;
     top: 4%;
+   
 }
 nav ul li a{
     text-decoration: none;
@@ -63,8 +120,8 @@ nav ul li a:hover{
     width: 100vw;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 200px;
     height: 100vh;
+    z-index: 0;
     
 }
 .behind_pic{
@@ -76,6 +133,7 @@ nav ul li a:hover{
     justify-content: center;
     border-radius: 5% 100% 5% 100%;
     box-shadow: 25px 5px 25px 5px rgba(177, 58, 3, 0.4);
+    z-index: 0;
 }
 .home_details{
     width: 400px;
@@ -326,3 +384,151 @@ h1 .about-orange{
 .project-content a:hover{
     color: wheat;
 }
+
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+#contact{
+    height: 90vh;
+}
+#contact h1{
+    color: wheat;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+}
+.con-ora{
+    color: orangered;
+    border-bottom: 5px solid wheat;
+    border-bottom-left-radius: 100%;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px;
+    
+}
+.form{
+    width: 250px;
+    height: auto;
+    padding: 50px;
+    box-shadow: 1px 0px 12px 12px rgba(235, 96, 4, 0.3);
+    border-radius: 15px;
+}
+.info-con img{
+    width: 50px;
+    cursor: pointer;
+}
+.form h4{
+    color: wheat;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+}
+textarea{
+    padding: 10px;
+    color: gray;
+    font-weight: 900;
+    height: 50px;
+}
+textarea, input{
+    background-color: wheat;
+    outline: none;
+    border: none;
+    width:100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 4px rgba(235, 96, 4, 0.3);
+}
+.input-filed{
+    margin-top: 20px;
+}
+.input-filed input{
+    height: 30px;
+    padding: 10px;
+    color: gray;
+    font-weight: 900;
+}
+.input-filed label{
+    color: orangered;
+}
+.btn{
+    background-color: orangered;
+    height: 30px;
+    margin-top: 10px;
+    font-weight: 900;
+    color: wheat;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.btn:hover{
+    background-color: wheat;
+    color: orangered;
+}
+.info{
+    display: grid;
+    gap: 20px;
+}
+.info .info-con{
+    display: flex;
+}
+.info-con span{
+    margin-top: 16px;
+    color: wheat;
+}
+footer{
+    width: 100vw;
+    height: 70px;
+   border-top: 1px solid orangered;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    gap: 5px;
+    box-shadow: 8px 0px 0px 10px rgba(216, 63, 2, 0.1);
+}
+.links img{
+    width: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+footer p{
+    color: wheat;
+    margin-left: 5px;
+   
+}
+/*/////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////*/
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+
+ } 
